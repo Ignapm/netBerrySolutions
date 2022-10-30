@@ -30,7 +30,11 @@ export class LoginComponent implements OnInit {
         id = u.id;
       }
     });
+    let lengthUsers = users.length;
     if(boolean) this.router.navigate(['/tasks'], { queryParams: { id } });
+    else if(localStorage.getItem('email') === this.email && localStorage.getItem('password') === this.password){
+      this.router.navigate(['/tasks'], { queryParams: { lengthUsers } });
+    }
     else {
       Swal.fire({
         icon: 'error',
