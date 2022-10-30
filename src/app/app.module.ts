@@ -8,10 +8,12 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { TasksComponent } from './tasks/tasks.component';
 
 const APP_ROUTES: Route[] = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'tasks', component: TasksComponent},
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/login', pathMatch: 'full' }
 ];
@@ -21,7 +23,8 @@ const APP_ROUTES: Route[] = [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    FooterComponent
+    FooterComponent,
+    TasksComponent
   ],
   imports: [
     BrowserModule,

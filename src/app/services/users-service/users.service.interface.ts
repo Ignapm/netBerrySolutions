@@ -1,7 +1,7 @@
 import { Observable } from "rxjs";
-import { Users } from "src/app/models/users.interface";
+import { Users } from "src/app/models/Users.interface";
 
-export interface UsersInterface {
+export interface IUsers {
 
   getUsers(): Observable<Users[]>
 }

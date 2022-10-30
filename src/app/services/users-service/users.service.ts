@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
-import { Users } from 'src/app/models/users.interface';
+import { Users } from 'src/app/models/Users.interface';
 import { Observable, of } from 'rxjs';
-import { UsersInterface } from './users.service.interface';
+import { IUsers } from './users.service.interface';
 
 @Injectable({
   providedIn: 'root'
 })
-export class UsersService implements UsersInterface {
+export class UsersService implements IUsers {
 
   getUsers(): Observable<Users[]>{
     return of([
       {
-        email: 'Sylvia21@yahoo.com',
-        password: '8WHzeEPQbDFECFc',
+        email: 'admin',
+        password: '123456',
         id: '1'
       },
       {
