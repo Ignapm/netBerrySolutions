@@ -12,20 +12,20 @@ export class TasksService implements ITasks {
     return of([
       {
         idUser: '1',
-        task: 'task 1',
-        description: 'description 1',
+        task: 'Get hired at netberry solutions',
+        description: 'Do the technical test',
         id: '1',
       },
       {
         idUser: '1',
-        task: 'task 2',
-        description: 'description 2',
+        task: 'Send technical test',
+        description: 'Send technical test to Helena Pascual',
         id: '2',
       },
       {
         idUser: '1',
-        task: 'task 3',
-        description: 'description 3',
+        task: 'Last interview ',
+        description: 'Have an interview with the application analyst',
         id: '3',
       },
     ]);

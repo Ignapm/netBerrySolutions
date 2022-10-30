@@ -1,0 +1,35 @@
+<form>
+  <h1 class="display-4">Add a new task!</h1>
+  <div class="form-group pt-2">
+    <label for="formGroupExampleInput">Name of the task</label>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="nameTask"
+      placeholder="Name of the task"
+      name="name"
+    />
+  </div>
+  <div class="form-group pt-2">
+    <label for="formGroupExampleInput">Description of the task</label>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="descriptionTask"
+      placeholder="Description of the task"
+      name="description"
+    />
+  </div>
+  <div class="row pt-2">
+    <div class="col-9">
+      <button type="submit" (click)="addTask()" class="btn btn-success">
+        Add task
+      </button>
+    </div>
+    <div class="col-1">
+      <button type="button" (click)="close()" class="btn btn-secondary">
+        Cancel
+      </button>
+    </div>
+  </div>
+</form>

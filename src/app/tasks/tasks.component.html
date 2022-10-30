@@ -5,7 +5,11 @@
         <th scope="col">#</th>
         <th scope="col">Task</th>
         <th scope="col">Description task</th>
-        <th colspan="2"></th>
+        <th colspan="2">
+          <button type="button" (click)="add()" class="btn btn-light">
+            Add task
+          </button>
+        </th>
       </tr>
     </thead>
     <tbody>
@@ -14,8 +18,12 @@
         <td>{{ task.task }}</td>
         <td>{{ task.description }}</td>
         <td>
-          <button type="button" (click)="add()" class="btn btn-info">
-            Add task
+          <button
+            type="button"
+            (click)="add(task)"
+            class="btn btn-info"
+          >
+            Modify
           </button>
         </td>
         <td>
